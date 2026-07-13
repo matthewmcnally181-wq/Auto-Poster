@@ -1,5 +1,4 @@
 # Auto-Poster
-# Social Media Uploader
 
 A simple full-stack app that lets you:
 - Create an account / login
