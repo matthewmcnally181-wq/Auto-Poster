@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Dashboard</h2>
+
+    <h3>1. Connect Platforms</h3>
+    <form method="POST" action="/connect">
+        <select name="platform">
+            <option value="YouTube">YouTube</option>
+            <option value="Twitter">Twitter</option>
+            <option value="Facebook">Facebook</option>
+        </select>
+        <button type="submit">Connect</button>
+    </form>
+
+    <h3>2. Upload Video</h3>
+    <input type="file" id="videoInput">
+    <button onclick="uploadVideo()">Upload</button>
+
+    <h3>3. Select Platforms</h3>
+    <label><input type="checkbox" value="YouTube"> YouTube</label>
+    <label><input type="checkbox" value="Twitter"> Twitter</label>
+    <label><input type="checkbox" value="Facebook"> Facebook</label>
+
+    <h3>4. Post</h3>
+    <button onclick="postVideo()">Post Everywhere</button>
+
+    <pre id="result"></pre>
+
+    <br>
+    <a href="/logout">Logout</a>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
