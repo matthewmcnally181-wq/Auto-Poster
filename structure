@@ -1,0 +1,15 @@
+social-media-uploader/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+│
+├── templates/
+│   ├── index.html
+│   ├── dashboard.html
+│
+├── static/
+│   ├── style.css
+│   ├── app.js
+│
+└── uploads/
